@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_toast/homemain.dart';
 import 'package:flutter_toast/widgets/toast/common_toast.dart';
 
 void main() {
@@ -12,14 +13,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    CommonToast.show(msg: 'Test toast msg!');
     return MaterialApp(
+      debugShowCheckedModeBanner:  false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Text('Fluttttt'),
+      home: Homemain(),
     );
   }
 }

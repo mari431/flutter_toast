@@ -8,13 +8,13 @@ class CommonToast {
     return Fluttertoast.showToast(
       msg: "$msg",
       webShowClose: true,
-      backgroundColor: Colors.white,
-      textColor: Colors.black,
+      backgroundColor: Colors.black,
+      textColor: Colors.white,
       timeInSecForIosWeb: 5,
       webBgColor: "linear-gradient(#334, #000)",
       webPosition: "center",// message
       toastLength: Toast.LENGTH_LONG, // length
-      gravity: ToastGravity.CENTER_RIGHT, // location
+      gravity: ToastGravity.CENTER, // location
     );
   }
 }
